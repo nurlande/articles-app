@@ -1,0 +1,19 @@
+<div class="card">
+  <h1 class="card-title">Statistics for last week</h1>
+  <div class="card-content">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Total articles</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let stat of statisticsByDate">
+          <td>{{ stat.date | date : 'dd MMMM yyyy' }}</td>
+          <td>{{ stat.total }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

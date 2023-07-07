@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+}
+.top-bar {
+    margin: 5px;
+    display: flex;
+    justify-content: end;
+}
+.card {
+  border-radius: 5px;
+  border: 1px Solid black;
+  margin: 5px;
+  padding: 20px;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-content {
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: end;
+  margin: 10px;
+}
+
+.form-group {
+    margin: 15px;
+}
+
+.form-label {
+    display: block;
+}
+
+.form-input {
+    width: 100%;
+}
+
+.form-textarea {
+    width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align: center;
+}
+th, td {
+  background-color: #96D4D4;
+}

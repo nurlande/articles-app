@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="top-bar">
+    <button (click)="onCreate()">+ New article</button>
+  </div>
+  <div style="color: darkblue">{{ removedMessage }}</div>
+  <div *ngFor="let article of articles">
+    <div class="card">
+      <h1 class="card-title">{{ article.title }}</h1>
+      <h4>Author: {{ article.author }}</h4>
+      <p class="card-content">{{ article.content }}</p>
+      <i>{{article.publishDate}}</i>
+      <div class="card-footer">
+        <button style="margin-right: 5px" (click)="onEdit(article.id)">
+          Edit
+        </button>
+        <button (click)="onDelete(article.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: space-between">
+    <button (click)="onPrev()" [disabled]="page < 2">Previous</button>
+    <button (click)="onNext()" [disabled]="articles.length < limit">
+      Next
+    </button>
+  </div>
+</div>
